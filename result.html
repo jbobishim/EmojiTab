@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>your rsults </title>
+<style>
+  body {
+    background-color: lightgreen; /* Sets the background color */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Sets the font to Comic Sans */
+  }
+  .emoji-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .emoji-cell {
+    padding: 20px;
+    border: none;
+  }
+</style>
+</head>
+<body onload="displayEmojiGrid()">
+<div style="text-align:center; margin-top:50px;">
+  <h1>here you go</h1>
+  <div id="emojiGrid" class="emoji-grid"></div>
+  <button onclick="goToIndexPage()">Go Back</button>
+</div>
+<script>
+const emojis = ['OMG ULTRA RARE', '😂', '🤣', '😍', '😎', '🤩', '🥳', '😜', '🤯', '😱', '🥺', '🤔', '🤫', '🤭', '🧐', '😓', '😔', '😖', '👻', '👽', '🤖', '💩', '🎃', '👾', '🤠', '👨‍🚀', '👨‍🎤', '👨‍🎨', '👨‍🍳', '👨‍🔬', '👨‍💼', '👨‍🏫', '👨‍🏭', '👨‍💻', '👨‍🔧', '👨‍🚒', '👨‍✈️', '👨‍🚀', '👨‍⚖️', '👰', '🤵', '👸', '🤴', '🦸‍♀️', '🦸‍♂️', '🦹‍♀️', '🦹‍♂️', '🧙‍♀️', '🧙‍♂️', '🧚‍♀️', '🧚‍♂️', '🧛‍♀️', '🧛‍♂️', '🧜‍♀️', '🧜‍♂️', '🧝‍♀️', '🧝‍♂️', '🧞‍♀️', '🧞‍♂️', '🧟‍♀️', '🧟‍♂️'];
+
+function displayEmojiGrid() {
+  const gridContainer = document.getElementById('emojiGrid');
+  const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+
+  for (let i = 0; i < 25; i++) { // Create a 5x5 grid
+    const emojiCell = document.createElement('div');
+    emojiCell.classList.add('emoji-cell');
+    emojiCell.textContent = randomEmoji;
+    gridContainer.appendChild(emojiCell);
+  }
+}
+
+function goToIndexPage() {
+  window.location.href = 'index.html';
+}
+</script>
+</body>
+</html>

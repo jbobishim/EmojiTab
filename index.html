@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmojiTab By JBOBISHIM</title>
+  <style>
+   body {
+      background-color: #90ee90; 
+      font-family: 'Comic Sans MS', cursive;
+    }
+  </style>
+</head>
+
+<body>
+  <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=949169684/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://cheeeks.bandcamp.com/album/when-you-can">when you can by cheeks</a></iframe>
+  <div style="text-align:center; margin-top:50px;">
+    <h1>EmojiTab By Jacob</h1>
+    <h2 style="color: yellow;">RIZZ EDITION</h2>
+    <form id="searchForm" action="captcha.html" method="get">
+      <input type="text" name="search" placeholder="Search for an emoji...">
+      <button type="submit" style="color: red;">Let's go</button>
+    </form>
+    <img src="source-unscreen.gif" alt="Rubix Cube Image" style="width: 350px;">
+  </div>
+
+  <script>
+    let spaceBarCount = 0;
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === ' ') {
+            spaceBarCount++;
+
+            if (spaceBarCount === 5) {
+                window.location.href = 'hidden_page.html';
+            }
+        }
+    }
+                              }
+  </script>
+</body>
+
+</html>

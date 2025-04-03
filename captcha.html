@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captcha</title>
+
+  <link rel="icon" type="image/x-icon" href="https://1000logos.net/wp-content/uploads/2023/12/Robot-Emoji.png">
+  <style>
+    body {
+      background-color: #90ee90; /* Set the background color to light green */
+      font-family: 'Comic Sans MS', cursive, sans-serif; /* Set the font to Comic Sans MS */
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align:center;">Captcha</h1>
+  
+  <div style="text-align:center;">
+    <img src="data:image/png;base64,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" alt="Captcha Image" style="width: 200px;">
+  </div>
+  
+  <form action="result.html" method="post" style="text-align:center;">
+    <label for="captcha">Enter the correct code:</label><br>
+    <input type="text" id="captcha" name="captcha" required><br><br>
+    <button type="submit" onclick="validateCaptcha()">Submit</button>
+  </form>
+
+  <script>
+    function validateCaptcha() {
+      // Assume the correct captcha code is "123456"
+      if (document.getElementById('captcha').value === 'smwm') {
+        window.location.href = 'result.html';
+      } else {
+        alert('Incorrect captcha code. Please try again.');
+      }
+   }
+  </script>
+</body>
+
+</html>
